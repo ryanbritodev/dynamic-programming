@@ -34,5 +34,5 @@ while True:
             case _:
                 print("Opção inválida! Tente novamente")
     except ValueError:
-        print("Número inválido! Tente novamente")
+        print("\nNúmero inválido! Tente novamente")
         continue
