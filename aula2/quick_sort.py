@@ -11,3 +11,4 @@ def quick_sort(lista):
 
 
 print("Lista ordenada: ", quick_sort(lista))
+
