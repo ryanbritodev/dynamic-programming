@@ -1,9 +1,12 @@
-def busca(lista, alvo):
-    if len(lista) == 1:
-        return True
-    else:
-       return lista[0] + busca(lista[alvo:])
+def busca_linear(lista, alvo):
+   if len(lista) == 0:
+      return False
+   elif lista[0] == alvo:
+      return True
+   else:
+      lista.pop(0)
+      return busca_linear(lista, alvo)
 
-lista = [1, 2, 3, 4, 5]
+listinha = [1, 2, 3]
 
-print(busca(lista, 2))
+print(busca_linear(listinha, 1))
